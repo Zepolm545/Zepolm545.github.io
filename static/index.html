@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mateo's Wesbite</title>
+</head>
+<body>
+    <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+
+  </div>
+
+<h1>Earth is a globe</h1>
+<p>Hello World</p>
+<img src="index.jpg" alt="World">
+
+
+<button class="monkeybutton" type="button">
+    <a href="/monkeys.html">Monkeys Page</a>
+</button>
+
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Click me for stuff</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+
+</body>
+
+<style>
+.monkeybutton {
+    background-color: #3cac38; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    width: 8em;
+}
+body {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(158, 218, 213);
+}
+img {
+    display: block;
+    margin: auto;
+}  
+
+.topnav a {
+  float: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 13px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #300505;
+}
+
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  max-width: 300px;
+  margin: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+    display:block;
+    
+}
+</style>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    
+</script>
